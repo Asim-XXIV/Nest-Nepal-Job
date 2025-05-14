@@ -1,0 +1,324 @@
+# API Documentation for Job & Institution Management System
+
+This documentation covers the APIs for user authentication, profile management, institution-related activities, job posting, and job application processes. The system also supports admin functionalities for user management and role-based access.
+
+---
+
+## 🔐 **Auth & User Profile APIs** `/api/`
+
+These endpoints handle user registration, login, profile management, and authentication.
+
+### 1. **POST /api/register/** - Register a New User
+Registers a new user with an email and password.
+
+**Request Body:**
+{
+  "email": "user@example.com",
+  "password": "your_password"
+}
+
+**Response:**
+- **201 Created**: Successfully registered the user.
+
+---
+
+### 2. **POST /api/login/** - Log in to Get JWT Token
+Logs in a user and provides a JWT token for authentication.
+
+**Request Body:**
+{
+  "email": "user@example.com",
+  "password": "your_password"
+}
+
+**Response:**
+- **200 OK**: Returns a JWT token.
+{
+  "token": "jwt_token_here"
+}
+
+---
+
+### 3. **POST /api/logout/** - Logout the Current User
+Logs out the authenticated user and invalidates their JWT token.
+
+**Headers:**
+- **Authorization**: Bearer `<your_token>`
+
+**Response:**
+- **200 OK**: User is logged out successfully.
+
+---
+
+### 4. **GET /api/profile/** - Get Authenticated User's Profile
+Fetches the profile of the currently authenticated user.
+
+**Headers:**
+- **Authorization**: Bearer `<your_token>`
+
+**Response:**
+- **200 OK**: Returns the user's profile information.
+{
+  "full_name": "John Doe",
+  "contact_number": "1234567890",
+  "resume_url": "https://example.com/resume.pdf",
+  "skills": ["Python", "Django", "REST"],
+  "experience": "2 years at XYZ",
+  "education": "BSc Computer Science"
+}
+
+---
+
+### 5. **POST /api/profile/** - Create or Update User Profile
+Allows the user to create or update their profile with additional information.
+
+**Request Body:**
+{
+  "full_name": "John Doe",
+  "contact_number": "1234567890",
+  "resume_url": "https://example.com/resume.pdf",
+  "skills": ["Python", "Django", "REST"],
+  "experience": "2 years at XYZ",
+  "education": "BSc Computer Science"
+}
+
+**Response:**
+- **200 OK**: Successfully updated the profile.
+
+---
+
+## 🏢 **Institution APIs** `/api/institutions/`
+
+These endpoints manage institution-related activities, such as listing, creating institutions, and managing members.
+
+### 1. **GET /api/institutions/list/** - List All Institutions
+Lists all the institutions available in the system.
+
+**Response:**
+- **200 OK**: Returns a list of institutions.
+[
+  {
+    "name": "ABC University",
+    "description": "Top-tier educational institute",
+    "location": "Kathmandu"
+  },
+  ...
+]
+
+---
+
+### 2. **POST /api/institutions/list/** - Create a New Institution
+Creates a new institution.
+
+**Request Body:**
+{
+  "name": "ABC University",
+  "description": "Top-tier educational institute",
+  "location": "Kathmandu"
+}
+
+**Response:**
+- **201 Created**: Successfully created the institution.
+{
+  "name": "ABC University",
+  "description": "Top-tier educational institute",
+  "location": "Kathmandu"
+}
+  
+---
+
+### 3. **GET /api/institutions/members/** - List All Institution Members
+Lists all the members associated with institutions.
+
+**Response:**
+- **200 OK**: Returns a list of institution members.
+[
+  {
+    "user": 1,
+    "institution": 2,
+    "role": "admin"
+  },
+  ...
+]
+
+---
+
+### 4. **POST /api/institutions/members/** - Add a Member to an Institution
+Adds a user to an institution with a specified role.
+
+**Request Body:**
+{
+  "user": 1,
+  "institution": 2,
+  "role": "admin"
+}
+
+**Response:**
+- **201 Created**: Successfully added the member.
+
+---
+
+## 💼 **Job APIs** `/api/institutions/jobs/`
+
+These endpoints handle job-related operations such as listing jobs and posting new job opportunities.
+
+### 1. **GET /api/institutions/jobs/** - List All Jobs
+Lists all available jobs in the system.
+
+**Response:**
+- **200 OK**: Returns a list of jobs.
+[
+  {
+    "title": "Software Engineer",
+    "description": "Develop web applications",
+    "location": "Remote",
+    "salary_range": "50,000 - 70,000",
+    "job_type": "full_time",
+    "status": "active",
+    "institution": 2,
+    "posted_by": 1
+  },
+  ...
+]
+
+---
+
+### 2. **POST /api/institutions/jobs/** - Post a New Job
+Posts a new job opportunity.
+
+**Request Body:**
+{
+  "title": "Software Engineer",
+  "description": "Develop web applications",
+  "location": "Remote",
+  "salary_range": "50,000 - 70,000",
+  "job_type": "full_time",
+  "status": "active",
+  "institution": 2,
+  "posted_by": 1
+}
+
+**Response:**
+- **201 Created**: Successfully posted the job.
+{
+  "title": "Software Engineer",
+  "description": "Develop web applications",
+  "location": "Remote",
+  "salary_range": "50,000 - 70,000",
+  "job_type": "full_time",
+  "status": "active",
+  "institution": 2,
+  "posted_by": 1
+}
+
+---
+
+## 📩 **Job Application APIs** `/api/institutions/applications/`
+
+These endpoints allow job seekers to apply for jobs and list applications.
+
+### 1. **GET /api/institutions/applications/** - List All Job Applications
+Lists all job applications submitted by users.
+
+**Response:**
+- **200 OK**: Returns a list of job applications.
+[
+  {
+    "job": 3,
+    "user": 1,
+    "cover_letter": "I am excited to apply for this position."
+  },
+  ...
+]
+
+---
+
+### 2. **POST /api/institutions/applications/** - Apply for a Job
+Submits a job application for a specific job.
+
+**Request Body:**
+{
+  "job": 3,
+  "user": 1,
+  "cover_letter": "I am excited to apply for this position."
+}
+
+**Response:**
+- **201 Created**: Successfully submitted the application.
+{
+  "job": 3,
+  "user": 1,
+  "cover_letter": "I am excited to apply for this position."
+}
+
+---
+
+## 🛠️ **Admin APIs** `/api/admin/`
+
+These endpoints are only accessible by admins for managing users and user profiles.
+
+### 1. **GET /api/admin/users/** - Get List of All Users (Admin Only)
+Lists all the users in the system.
+
+**Headers:**
+- **Authorization**: Bearer `<admin_token>`
+
+**Response:**
+- **200 OK**: Returns a list of all users.
+[
+  {
+    "id": 1,
+    "email": "user1@example.com",
+    "role": "admin"
+  },
+  ...
+]
+
+---
+
+### 2. **GET /api/admin/users/<user_id>/** - Retrieve Specific User Info (Admin Only)
+Fetches the information of a specific user.
+
+**Headers:**
+- **Authorization**: Bearer `<admin_token>`
+
+**Response:**
+- **200 OK**: Returns the user's details.
+{
+  "id": 1,
+  "email": "user1@example.com",
+  "role": "admin",
+  "profile": {
+    "full_name": "John Doe",
+    "contact_number": "1234567890",
+    "skills": ["Python", "Django"]
+  }
+}
+
+---
+
+### 3. **PUT /api/admin/users/<user_id>/** - Update User Info (Admin Only)
+Updates the information of a specific user.
+
+**Headers:**
+- **Authorization**: Bearer `<admin_token>`
+
+**Request Body:**
+{
+  "email": "updated_email@example.com",
+  "role": "user"
+}
+
+**Response:**
+- **200 OK**: Successfully updated the user.
+
+---
+
+### 4. **DELETE /api/admin/users/<user_id>/** - Delete a User (Admin Only)
+Deletes a specific user from the system.
+
+**Headers:**
+- **Authorization**: Bearer `<admin_token>`
+
+**Response:**
+- **200 OK**: Successfully deleted the user.
