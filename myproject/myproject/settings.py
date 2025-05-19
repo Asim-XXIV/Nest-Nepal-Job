@@ -5,6 +5,7 @@ Modified for production deployment with secure configurations.
 """
 
 import os
+from datetime import timedelta
 from pathlib import Path
 import dj_database_url
 from dotenv import load_dotenv
@@ -108,7 +109,7 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'main.utils.custom_exception_handler',
 }
 
-CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS', 'http://localhost:3000,http://127.0.0.1:3000').split(',')
+CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS', 'http://localhost:8000,http://127.0.0.1:8000').split(',')
 CORS_ALLOW_CREDENTIALS = True
 
 FILE_UPLOAD_MAX_MEMORY_SIZE = 5242880
@@ -172,4 +173,18 @@ LOGGING = {
             'propagate': True,
         },
     },
+     'django': {
+              'handlers': ['console', 'file'],
+              'level': 'DEBUG',
+              'propagate': False,
+          },
+          'main': {
+              'handlers': ['console', 'file'],
+              'level': 'DEBUG',
+              'propagate': False,
+          },
+}
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(hours=3),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1)
 }

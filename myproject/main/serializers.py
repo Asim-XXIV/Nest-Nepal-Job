@@ -55,15 +55,17 @@ class UserProfileSerializer(serializers.ModelSerializer):
             'skills',
             'experience',
             'education',
+            'profile_picture',
             'profile_picture_url',
         ]
 
     def get_profile_picture_url(self, obj):
-        request = self.context.get('request')
-        if obj.profile_picture and hasattr(obj.profile_picture, 'url'):
-            if request:
-                return request.build_absolute_uri(obj.profile_picture.url)
-            return obj.profile_picture.url
+        try:
+            profile = obj.userprofile
+            if profile.profile_picture and hasattr(profile.profile_picture, 'url'):
+                return profile.profile_picture.url
+        except UserProfile.DoesNotExist:
+            return None
         return None
 
     def validate_skills(self, value):

@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.pagination import PageNumberPagination
 from rest_framework_simplejwt.exceptions import TokenError
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -10,14 +10,14 @@ from django.utils import timezone
 from datetime import timedelta
 from django.shortcuts import get_object_or_404
 from django.db.models import Q
-
+from rest_framework.parsers import MultiPartParser, FormParser
 from .models import CustomUser, UserProfile, Notification
 from .serializers import (
     RegisterSerializer, LoginSerializer, UserProfileSerializer,
     AdminUserSerializer, PasswordChangeSerializer, NotificationSerializer
 )
 from .permissions import IsAdminUserRole, IsOwnerOrAdmin
-from .utils import exception_handler, transaction_atomic
+from .utils import transaction_atomic
 
 
 class StandardResultsSetPagination(PageNumberPagination):
@@ -30,11 +30,11 @@ class StandardResultsSetPagination(PageNumberPagination):
 
 
 class RegisterView(APIView):
+    permission_classes = [AllowAny]
     """
     API endpoint for user registration
     """
 
-    @exception_handler
     @transaction_atomic
     def post(self, request):
         serializer = RegisterSerializer(data=request.data)
@@ -46,11 +46,11 @@ class RegisterView(APIView):
 
 
 class LoginView(APIView):
+    permission_classes = [AllowAny]
     """
     API endpoint for user login
     """
 
-    @exception_handler
     def post(self, request):
         serializer = LoginSerializer(data=request.data)
         if serializer.is_valid():
@@ -91,7 +91,7 @@ class LoginView(APIView):
             response.set_cookie('user_id', user.id)
             response.set_cookie('username', user.username)
 
-            # Mark new notifications as read
+            # Create notification
             Notification.create_notification(
                 recipient=user,
                 notification_type='account',
@@ -109,7 +109,6 @@ class LogoutView(APIView):
     """
     permission_classes = [IsAuthenticated]
 
-    @exception_handler
     def post(self, request):
         try:
             # Create logout notification
@@ -140,7 +139,6 @@ class ChangePasswordView(APIView):
     """
     permission_classes = [IsAuthenticated]
 
-    @exception_handler
     @transaction_atomic
     def post(self, request):
         serializer = PasswordChangeSerializer(data=request.data)
@@ -166,13 +164,15 @@ class ChangePasswordView(APIView):
         return Response({"message": "Password changed successfully"}, status=status.HTTP_200_OK)
 
 
-class UserProfileView(APIView):
-    """
-    API endpoint for user profile management
-    """
-    permission_classes = [IsAuthenticated]
+import logging
 
-    @exception_handler
+logger = logging.getLogger(__name__)
+
+
+class UserProfileView(APIView):
+    permission_classes = [IsAuthenticated]
+    parser_classes = [MultiPartParser, FormParser]
+
     def get(self, request):
         try:
             profile = request.user.userprofile
@@ -181,17 +181,32 @@ class UserProfileView(APIView):
         except UserProfile.DoesNotExist:
             return Response({'error': 'Profile not found'}, status=status.HTTP_404_NOT_FOUND)
 
-    @exception_handler
     @transaction_atomic
     def put(self, request):
         try:
+            # Log all keys in request.data
+            logger.info(f"PUT request data keys: {list(request.data.keys())}")
+
+            # Log if profile_picture is in files or data
+            if 'profile_picture' in request.FILES:
+                logger.info(
+                    f"Received profile_picture file: {request.FILES['profile_picture'].name} size: {request.FILES['profile_picture'].size}")
+            else:
+                logger.warning("No profile_picture file found in request.FILES")
+
             profile = request.user.userprofile
-            serializer = UserProfileSerializer(profile, data=request.data, partial=True, context={'request': request})
+            serializer = UserProfileSerializer(
+                profile, data=request.data, partial=True, context={'request': request}
+            )
             if serializer.is_valid():
                 serializer.save()
+                logger.info("Profile updated successfully.")
                 return Response(serializer.data, status=status.HTTP_200_OK)
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            else:
+                logger.error(f"Serializer errors: {serializer.errors}")
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         except UserProfile.DoesNotExist:
+            logger.error("UserProfile does not exist for this user.")
             return Response({'error': 'Profile not found'}, status=status.HTTP_404_NOT_FOUND)
 
 
@@ -202,7 +217,6 @@ class AdminUserListView(APIView):
     permission_classes = [IsAuthenticated, IsAdminUserRole]
     pagination_class = StandardResultsSetPagination
 
-    @exception_handler
     def get(self, request):
         paginator = self.pagination_class()
 
@@ -244,7 +258,6 @@ class AdminUserDetailView(APIView):
     """
     permission_classes = [IsAuthenticated, IsAdminUserRole]
 
-    @exception_handler
     def get(self, request, user_id):
         user = get_object_or_404(CustomUser, id=user_id)
         profile = getattr(user, 'userprofile', None)
@@ -259,7 +272,6 @@ class AdminUserDetailView(APIView):
 
         return Response(user_data, status=status.HTTP_200_OK)
 
-    @exception_handler
     @transaction_atomic
     def put(self, request, user_id):
         user = get_object_or_404(CustomUser, id=user_id)
@@ -295,7 +307,6 @@ class AdminUserDetailView(APIView):
 
         return Response({"message": "User updated successfully"}, status=status.HTTP_200_OK)
 
-    @exception_handler
     @transaction_atomic
     def delete(self, request, user_id):
         user = get_object_or_404(CustomUser, id=user_id)
@@ -325,7 +336,6 @@ class RefreshTokenView(APIView):
     API endpoint to refresh access token
     """
 
-    @exception_handler
     def post(self, request):
         refresh_token = request.COOKIES.get('refresh_token')
         if refresh_token is None:
@@ -358,7 +368,6 @@ class NotificationListView(APIView):
     permission_classes = [IsAuthenticated]
     pagination_class = StandardResultsSetPagination
 
-    @exception_handler
     def get(self, request):
         paginator = self.pagination_class()
         notifications = Notification.objects.filter(recipient=request.user)
@@ -387,7 +396,6 @@ class NotificationDetailView(APIView):
     """
     permission_classes = [IsAuthenticated, IsOwnerOrAdmin]
 
-    @exception_handler
     def get(self, request, notification_id):
         notification = get_object_or_404(Notification, id=notification_id)
 
@@ -397,7 +405,6 @@ class NotificationDetailView(APIView):
         serializer = NotificationSerializer(notification)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    @exception_handler
     def put(self, request, notification_id):
         notification = get_object_or_404(Notification, id=notification_id)
 
@@ -411,7 +418,6 @@ class NotificationDetailView(APIView):
         serializer = NotificationSerializer(notification)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    @exception_handler
     def delete(self, request, notification_id):
         notification = get_object_or_404(Notification, id=notification_id)
 
@@ -428,7 +434,6 @@ class NotificationMarkAllReadView(APIView):
     """
     permission_classes = [IsAuthenticated]
 
-    @exception_handler
     @transaction_atomic
     def post(self, request):
         count = Notification.objects.filter(recipient=request.user, is_read=False).update(is_read=True)
@@ -442,7 +447,6 @@ class AdminNotificationListView(APIView):
     permission_classes = [IsAuthenticated, IsAdminUserRole]
     pagination_class = StandardResultsSetPagination
 
-    @exception_handler
     def get(self, request):
         paginator = self.pagination_class()
         notifications = Notification.objects.all()
@@ -476,7 +480,6 @@ class AdminCreateNotificationView(APIView):
     """
     permission_classes = [IsAuthenticated, IsAdminUserRole]
 
-    @exception_handler
     @transaction_atomic
     def post(self, request):
         recipient_id = request.data.get('recipient_id')
@@ -545,7 +548,6 @@ class UserSearchView(APIView):
     permission_classes = [IsAuthenticated, IsAdminUserRole]
     pagination_class = StandardResultsSetPagination
 
-    @exception_handler
     def get(self, request):
         paginator = self.pagination_class()
         search_query = request.query_params.get('q', '')

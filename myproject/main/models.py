@@ -75,7 +75,8 @@ class Notification(models.Model):
     is_read = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     related_object_id = models.PositiveIntegerField(null=True, blank=True)
-    related_object_type = models.CharField(max_length=50, blank=True)
+    related_object_type = models.CharField(max_length=100, null=True, blank=True)
+
 
     class Meta:
         ordering = ['-created_at']

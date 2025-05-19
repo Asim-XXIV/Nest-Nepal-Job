@@ -1,1 +1,1343 @@
 INFO 2025-05-19 11:42:49,887 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 12:10:58,125 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:10:58,409 log Bad Request: /api/login/
+WARNING 2025-05-19 12:10:58,411 basehttp "POST /api/login/ HTTP/1.1" 400 77452
+INFO 2025-05-19 12:11:37,767 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 12:12:24,512 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:12:24,537 log Bad Request: /admin/main/userprofile/7/change/
+WARNING 2025-05-19 12:12:24,538 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 400 76519
+ERROR 2025-05-19 12:12:24,819 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:12:24,833 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:12:24,835 basehttp "GET /favicon.ico HTTP/1.1" 400 76176
+INFO 2025-05-19 12:13:22,343 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 12:13:24,967 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:24,991 log Bad Request: /admin
+WARNING 2025-05-19 12:13:24,992 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:25,238 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:25,259 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:25,260 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:31,848 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:31,868 log Bad Request: /admin
+WARNING 2025-05-19 12:13:31,870 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:31,978 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:31,993 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:31,993 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:33,837 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:33,857 log Bad Request: /admin
+WARNING 2025-05-19 12:13:33,858 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:33,958 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:33,975 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:33,976 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:34,098 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,113 log Bad Request: /admin
+WARNING 2025-05-19 12:13:34,113 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:34,221 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,242 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:34,243 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:34,272 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,290 log Bad Request: /admin
+WARNING 2025-05-19 12:13:34,290 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:34,399 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,417 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:34,418 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:34,431 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,449 log Bad Request: /admin
+WARNING 2025-05-19 12:13:34,449 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:34,554 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+ERROR 2025-05-19 12:13:34,562 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,571 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:34,576 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+WARNING 2025-05-19 12:13:34,586 log Bad Request: /admin
+WARNING 2025-05-19 12:13:34,587 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:34,690 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,704 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:34,704 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:34,765 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,781 log Bad Request: /admin
+WARNING 2025-05-19 12:13:34,782 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:34,873 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,895 log Bad Request: /favicon.ico
+ERROR 2025-05-19 12:13:34,896 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:34,896 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+WARNING 2025-05-19 12:13:34,911 log Bad Request: /admin
+WARNING 2025-05-19 12:13:34,912 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:35,013 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:35,031 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:35,032 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:35,057 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:35,073 log Bad Request: /admin
+WARNING 2025-05-19 12:13:35,073 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:35,174 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:35,188 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:35,188 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:35,218 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:35,236 log Bad Request: /admin
+WARNING 2025-05-19 12:13:35,237 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:35,336 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:35,368 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:35,368 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:36,299 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,316 log Bad Request: /admin
+WARNING 2025-05-19 12:13:36,317 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:36,424 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,441 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:36,442 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:36,465 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,489 log Bad Request: /admin
+WARNING 2025-05-19 12:13:36,490 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:36,582 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,601 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:36,602 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:36,608 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,621 log Bad Request: /admin
+WARNING 2025-05-19 12:13:36,622 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:36,723 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,738 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:36,739 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:36,751 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,766 log Bad Request: /admin
+WARNING 2025-05-19 12:13:36,766 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:36,867 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,884 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:36,885 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:36,902 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:36,917 log Bad Request: /admin
+WARNING 2025-05-19 12:13:36,917 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:37,025 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:37,042 log Bad Request: /favicon.ico
+ERROR 2025-05-19 12:13:37,043 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:37,044 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+WARNING 2025-05-19 12:13:37,058 log Bad Request: /admin
+WARNING 2025-05-19 12:13:37,058 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:37,155 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:37,172 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:37,173 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:13:37,193 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:37,206 log Bad Request: /admin
+WARNING 2025-05-19 12:13:37,207 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:37,319 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+ERROR 2025-05-19 12:13:37,320 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:37,345 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:37,345 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+WARNING 2025-05-19 12:13:37,353 log Bad Request: /admin
+WARNING 2025-05-19 12:13:37,355 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:13:37,457 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:13:37,471 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:13:37,471 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:14:45,044 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:14:45,071 log Bad Request: /admin
+WARNING 2025-05-19 12:14:45,072 basehttp "GET /admin HTTP/1.1" 400 75483
+ERROR 2025-05-19 12:14:45,174 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:14:45,210 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:14:45,211 basehttp "GET /favicon.ico HTTP/1.1" 400 75528
+INFO 2025-05-19 12:15:44,174 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\myproject\settings.py changed, reloading.
+INFO 2025-05-19 12:15:45,191 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 12:15:51,225 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:15:51,249 log Bad Request: /admin
+WARNING 2025-05-19 12:15:51,251 basehttp "GET /admin HTTP/1.1" 400 75620
+ERROR 2025-05-19 12:15:51,293 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:15:51,312 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:15:51,313 basehttp "GET /favicon.ico HTTP/1.1" 400 75528
+ERROR 2025-05-19 12:15:53,246 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:15:53,261 log Bad Request: /admin
+WARNING 2025-05-19 12:15:53,262 basehttp "GET /admin HTTP/1.1" 400 75620
+ERROR 2025-05-19 12:15:53,315 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:15:53,330 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:15:53,331 basehttp "GET /favicon.ico HTTP/1.1" 400 75528
+ERROR 2025-05-19 12:16:07,601 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:16:07,621 log Bad Request: /admin
+WARNING 2025-05-19 12:16:07,622 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:16:07,926 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:16:07,945 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:16:07,945 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+ERROR 2025-05-19 12:19:44,574 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:19:44,615 log Bad Request: /admin
+WARNING 2025-05-19 12:19:44,615 basehttp "GET /admin HTTP/1.1" 400 76241
+ERROR 2025-05-19 12:19:44,734 exception Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asim\Desktop\dummy_project\venv\Lib\site-packages\django\http\request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.68:8000'. You may need to add '192.168.1.68' to ALLOWED_HOSTS.
+WARNING 2025-05-19 12:19:44,774 log Bad Request: /favicon.ico
+WARNING 2025-05-19 12:19:44,776 basehttp "GET /favicon.ico HTTP/1.1" 400 76149
+INFO 2025-05-19 12:47:40,465 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 12:47:44,252 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-05-19 12:47:44,769 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+INFO 2025-05-19 12:47:44,991 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-05-19 12:47:44,996 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-05-19 12:47:44,998 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-05-19 12:47:45,000 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-05-19 12:47:45,000 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-05-19 12:47:45,016 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-05-19 12:47:45,027 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-05-19 12:47:45,089 log Not Found: /favicon.ico
+WARNING 2025-05-19 12:47:45,089 basehttp "GET /favicon.ico HTTP/1.1" 404 2847
+INFO 2025-05-19 12:48:03,481 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-05-19 12:48:03,537 basehttp "GET /admin/ HTTP/1.1" 200 12873
+INFO 2025-05-19 12:48:03,575 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-05-19 12:48:03,593 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-05-19 12:48:03,593 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-05-19 13:22:22,042 basehttp "GET /admin HTTP/1.1" 301 0
+WARNING 2025-05-19 13:22:22,070 base Session data corrupted
+INFO 2025-05-19 13:22:22,070 basehttp "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-05-19 13:22:22,299 base Session data corrupted
+INFO 2025-05-19 13:22:22,306 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+INFO 2025-05-19 13:22:22,356 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-05-19 13:22:22,364 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-05-19 13:22:22,369 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-05-19 13:22:22,369 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-05-19 13:22:22,372 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-05-19 13:22:22,373 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-05-19 13:22:22,442 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2025-05-19 13:22:22,675 log Not Found: /favicon.ico
+WARNING 2025-05-19 13:22:22,676 basehttp "GET /favicon.ico HTTP/1.1" 404 2850
+INFO 2025-05-19 13:22:25,441 basehttp "GET /admin/social_django/usersocialauth/ HTTP/1.1" 200 13615
+INFO 2025-05-19 13:22:25,484 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-05-19 13:22:25,497 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-05-19 13:22:25,512 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 13:22:25,512 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-05-19 13:22:25,517 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-05-19 13:22:25,519 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-05-19 13:22:25,529 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-05-19 13:22:25,536 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-05-19 13:22:25,537 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-05-19 13:22:25,580 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-05-19 13:22:25,605 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-05-19 13:22:25,647 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-05-19 13:22:25,680 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-05-19 13:22:25,681 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-05-19 13:22:28,635 basehttp "GET /admin/social_django/nonce/ HTTP/1.1" 200 12978
+INFO 2025-05-19 13:22:28,657 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 13:22:31,194 basehttp "GET /admin/social_django/association/ HTTP/1.1" 200 13588
+INFO 2025-05-19 13:22:31,216 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-05-19 13:22:31,683 base Session data corrupted
+INFO 2025-05-19 13:22:32,622 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-05-19 13:22:32,878 basehttp "GET /admin/ HTTP/1.1" 200 16607
+INFO 2025-05-19 13:22:32,954 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-05-19 13:22:32,955 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-05-19 13:22:32,956 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+WARNING 2025-05-19 13:23:19,962 log Not Found: /api/login/
+WARNING 2025-05-19 13:23:19,964 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:23:49,100 log Not Found: /api/login/
+WARNING 2025-05-19 13:23:49,101 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:29:41,496 log Not Found: /api/login/
+WARNING 2025-05-19 13:29:41,497 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:30:03,075 log Not Found: /api/profile/
+WARNING 2025-05-19 13:30:03,076 basehttp "PUT /api/profile/ HTTP/1.1" 404 2853
+WARNING 2025-05-19 13:30:18,082 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:18,083 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:30:19,002 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:19,003 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:30:19,333 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:19,334 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:30:23,358 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:23,359 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+INFO 2025-05-19 13:30:45,987 basehttp "GET /admin/ HTTP/1.1" 200 16607
+WARNING 2025-05-19 13:30:53,073 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:53,074 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:30:53,716 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:53,716 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:30:53,915 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:53,915 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:30:54,272 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:54,272 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:30:54,439 log Not Found: /api/login/
+WARNING 2025-05-19 13:30:54,440 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:31:07,523 log Not Found: /api/login/
+WARNING 2025-05-19 13:31:07,524 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:31:14,521 log Not Found: /api/login/
+WARNING 2025-05-19 13:31:14,522 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:31:26,641 log Not Found: /api/login/
+WARNING 2025-05-19 13:31:26,642 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 13:31:31,250 log Not Found: /api/login/
+WARNING 2025-05-19 13:31:31,251 basehttp "GET /api/login/ HTTP/1.1" 404 2847
+ERROR 2025-05-19 13:34:51,699 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 13:34:51,699 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 66
+ERROR 2025-05-19 13:34:52,202 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 13:34:52,202 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 66
+ERROR 2025-05-19 13:34:59,646 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 13:34:59,647 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 66
+ERROR 2025-05-19 13:35:08,449 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 13:35:08,450 basehttp "GET /api/main/auth/login/ HTTP/1.1" 500 66
+ERROR 2025-05-19 13:36:33,975 log Internal Server Error: /api/main/auth/register/
+ERROR 2025-05-19 13:36:33,976 basehttp "POST /api/main/auth/register/ HTTP/1.1" 500 66
+ERROR 2025-05-19 13:36:42,761 log Internal Server Error: /api/main/auth/register/
+ERROR 2025-05-19 13:36:42,761 basehttp "GET /api/main/auth/register/ HTTP/1.1" 500 66
+WARNING 2025-05-19 13:38:06,724 log Not Found: /api/register/
+WARNING 2025-05-19 13:38:06,724 basehttp "POST /api/register/ HTTP/1.1" 404 2857
+WARNING 2025-05-19 13:38:14,725 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:38:14,725 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 197
+WARNING 2025-05-19 13:39:16,917 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:39:16,918 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 110
+WARNING 2025-05-19 13:39:25,186 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:39:25,186 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 54
+INFO 2025-05-19 13:39:28,487 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\utils.py changed, reloading.
+INFO 2025-05-19 13:39:30,378 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:39:52,195 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\utils.py changed, reloading.
+INFO 2025-05-19 13:39:57,766 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:40:20,878 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\views.py changed, reloading.
+INFO 2025-05-19 13:40:21,912 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:42:07,613 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\views.py changed, reloading.
+INFO 2025-05-19 13:42:08,957 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:42:59,418 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\views.py changed, reloading.
+INFO 2025-05-19 13:43:01,238 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:44:04,936 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\myproject\settings.py changed, reloading.
+INFO 2025-05-19 13:44:20,622 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-19 13:44:42,789 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:44:42,789 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 53
+INFO 2025-05-19 13:44:43,052 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\myproject\settings.py changed, reloading.
+INFO 2025-05-19 13:45:08,671 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-19 13:45:10,374 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:45:10,374 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 54
+WARNING 2025-05-19 13:45:14,697 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:45:14,697 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 53
+WARNING 2025-05-19 13:49:56,552 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:49:56,552 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 53
+WARNING 2025-05-19 13:49:57,214 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:49:57,215 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 53
+WARNING 2025-05-19 13:50:08,007 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:50:08,007 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 49
+WARNING 2025-05-19 13:50:08,925 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:50:08,925 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 49
+WARNING 2025-05-19 13:50:09,141 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:50:09,142 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 49
+WARNING 2025-05-19 13:50:14,356 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:50:14,356 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 127
+WARNING 2025-05-19 13:50:20,093 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:50:20,093 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 49
+WARNING 2025-05-19 13:50:21,150 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 13:50:21,150 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 49
+INFO 2025-05-19 13:50:28,007 basehttp "POST /api/main/auth/register/ HTTP/1.1" 201 42
+WARNING 2025-05-19 13:50:53,739 log Forbidden: /api/main/auth/register/
+WARNING 2025-05-19 13:50:53,740 basehttp "POST /api/main/auth/register/ HTTP/1.1" 403 44
+WARNING 2025-05-19 13:50:56,974 log Forbidden: /api/main/auth/register/
+WARNING 2025-05-19 13:50:56,975 basehttp "POST /api/main/auth/register/ HTTP/1.1" 403 44
+WARNING 2025-05-19 13:51:10,739 log Forbidden: /api/main/auth/register/
+WARNING 2025-05-19 13:51:10,740 basehttp "POST /api/main/auth/register/ HTTP/1.1" 403 44
+WARNING 2025-05-19 13:51:27,678 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 13:51:27,678 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 44
+WARNING 2025-05-19 13:51:35,214 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 13:51:35,216 basehttp "GET /api/main/auth/login/ HTTP/1.1" 403 3884
+WARNING 2025-05-19 14:01:00,375 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:01:00,377 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 44
+WARNING 2025-05-19 14:01:34,813 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:01:34,814 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 44
+WARNING 2025-05-19 14:01:37,966 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:01:37,967 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 44
+WARNING 2025-05-19 14:01:59,605 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:01:59,606 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 44
+INFO 2025-05-19 14:05:05,307 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\authentication.py changed, reloading.
+INFO 2025-05-19 14:05:07,517 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:06:04,875 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\authentication.py changed, reloading.
+INFO 2025-05-19 14:06:05,834 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:06:34,169 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 14:08:06,197 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:08:06,198 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+ERROR 2025-05-19 14:08:16,338 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:08:16,338 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+INFO 2025-05-19 14:09:15,899 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\views.py changed, reloading.
+INFO 2025-05-19 14:09:16,987 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:09:20,068 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\views.py changed, reloading.
+INFO 2025-05-19 14:09:21,034 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 14:09:30,214 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:09:30,215 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+ERROR 2025-05-19 14:09:44,144 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:09:44,145 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+INFO 2025-05-19 14:11:32,013 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\authentication.py changed, reloading.
+INFO 2025-05-19 14:11:33,129 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-19 14:11:44,858 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:11:44,859 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 55
+WARNING 2025-05-19 14:12:24,534 log Not Found: /api/login/
+WARNING 2025-05-19 14:12:24,535 basehttp "POST /api/login/ HTTP/1.1" 404 2848
+WARNING 2025-05-19 14:12:37,195 log Bad Request: /api/main/auth/login/
+WARNING 2025-05-19 14:12:37,196 basehttp "POST /api/main/auth/login/ HTTP/1.1" 400 76
+ERROR 2025-05-19 14:12:59,739 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:12:59,740 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+INFO 2025-05-19 14:13:47,888 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\views.py changed, reloading.
+INFO 2025-05-19 14:13:49,263 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 14:14:05,858 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:14:05,858 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+INFO 2025-05-19 14:15:01,513 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\models.py changed, reloading.
+INFO 2025-05-19 14:15:02,573 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-19 14:16:07,377 log Bad Request: /api/main/auth/register/
+WARNING 2025-05-19 14:16:07,378 basehttp "POST /api/main/auth/register/ HTTP/1.1" 400 48
+INFO 2025-05-19 14:16:31,960 basehttp "POST /api/main/auth/register/ HTTP/1.1" 201 42
+WARNING 2025-05-19 14:17:04,989 log Bad Request: /api/main/auth/login/
+WARNING 2025-05-19 14:17:04,989 basehttp "POST /api/main/auth/login/ HTTP/1.1" 400 126
+WARNING 2025-05-19 14:17:11,386 log Bad Request: /api/main/auth/login/
+WARNING 2025-05-19 14:17:11,386 basehttp "POST /api/main/auth/login/ HTTP/1.1" 400 37
+WARNING 2025-05-19 14:17:29,431 log Bad Request: /api/main/auth/login/
+WARNING 2025-05-19 14:17:29,431 basehttp "POST /api/main/auth/login/ HTTP/1.1" 400 126
+ERROR 2025-05-19 14:17:36,205 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:17:36,205 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+ERROR 2025-05-19 14:17:41,154 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:17:41,155 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+INFO 2025-05-19 14:18:20,147 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 14:18:22,639 log Internal Server Error: /api/main/auth/login/
+ERROR 2025-05-19 14:18:22,639 basehttp "POST /api/main/auth/login/ HTTP/1.1" 500 41
+INFO 2025-05-19 14:19:30,790 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\models.py changed, reloading.
+INFO 2025-05-19 14:19:31,827 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:19:53,680 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:19:57,034 basehttp "POST /api/main/auth/login/ HTTP/1.1" 200 84
+WARNING 2025-05-19 14:20:05,667 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:20:05,668 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 55
+WARNING 2025-05-19 14:20:06,860 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:20:06,860 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 55
+INFO 2025-05-19 14:20:10,944 basehttp "POST /api/main/auth/login/ HTTP/1.1" 200 81
+WARNING 2025-05-19 14:20:20,343 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:20:20,344 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 55
+WARNING 2025-05-19 14:20:30,651 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:20:30,651 basehttp "GET /api/main/auth/login/ HTTP/1.1" 403 3895
+INFO 2025-05-19 14:22:56,127 basehttp "POST /api/main/auth/login/ HTTP/1.1" 200 81
+INFO 2025-05-19 14:23:06,302 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\myproject\settings.py changed, reloading.
+INFO 2025-05-19 14:23:27,834 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:23:32,870 basehttp "POST /api/main/auth/login/ HTTP/1.1" 200 84
+INFO 2025-05-19 14:25:16,086 basehttp "POST /api/main/auth/login/ HTTP/1.1" 200 81
+WARNING 2025-05-19 14:25:17,887 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:25:17,888 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 55
+WARNING 2025-05-19 14:25:40,173 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:25:40,175 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 55
+WARNING 2025-05-19 14:26:06,238 log Forbidden: /api/main/auth/login/
+WARNING 2025-05-19 14:26:06,238 basehttp "POST /api/main/auth/login/ HTTP/1.1" 403 55
+INFO 2025-05-19 14:29:11,082 basehttp "POST /api/main/auth/login/ HTTP/1.1" 200 81
+WARNING 2025-05-19 14:29:20,815 log Not Found: /api/main/profile/
+WARNING 2025-05-19 14:29:20,815 basehttp "GET /api/main/profile/ HTTP/1.1" 404 6995
+WARNING 2025-05-19 14:29:20,839 log Not Found: /api/main/profile/
+WARNING 2025-05-19 14:29:20,840 basehttp "GET /api/main/profile/ HTTP/1.1" 404 6995
+INFO 2025-05-19 14:29:55,060 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 290
+INFO 2025-05-19 14:29:55,365 basehttp "GET /media/media/profile_pics/image5.jpg HTTP/1.1" 200 120350
+INFO 2025-05-19 14:30:30,265 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 297
+INFO 2025-05-19 14:30:30,399 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 297
+INFO 2025-05-19 14:30:33,962 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 297
+INFO 2025-05-19 14:30:42,027 basehttp "GET /admin/main/customuser/ HTTP/1.1" 200 16522
+INFO 2025-05-19 14:30:42,103 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,108 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,110 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,110 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:30:42,113 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,113 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,116 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,173 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,173 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,173 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,240 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:42,246 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:45,327 basehttp "GET /admin/main/customuser/7/change/ HTTP/1.1" 200 26575
+INFO 2025-05-19 14:30:45,736 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:30:45,741 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:45,742 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:45,742 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:45,742 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:46,068 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:46,073 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:46,692 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:46,692 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:50,103 basehttp "GET /admin/main/userprofile/ HTTP/1.1" 200 14834
+INFO 2025-05-19 14:30:50,171 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:30:51,613 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 20090
+INFO 2025-05-19 14:30:51,674 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:30:51,680 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:54,608 basehttp "GET /media/media/profile_pics/image5.jpg HTTP/1.1" 200 120350
+INFO 2025-05-19 14:31:19,351 basehttp "POST /admin/main/userprofile/7/change/ HTTP/1.1" 302 0
+INFO 2025-05-19 14:31:19,442 basehttp "GET /admin/main/userprofile/ HTTP/1.1" 200 15053
+INFO 2025-05-19 14:31:19,491 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:31:19,513 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:31:21,061 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 19781
+INFO 2025-05-19 14:31:21,128 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:31:27,398 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:31:32,995 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:31:33,017 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:31:39,543 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 19781
+INFO 2025-05-19 14:31:39,595 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:33:47,231 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:33:47,258 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:34:23,269 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:34:33,129 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:34:33,157 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:34:43,458 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 238
+INFO 2025-05-19 14:34:43,756 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 238
+INFO 2025-05-19 14:38:46,041 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 238
+INFO 2025-05-19 14:38:54,630 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 238
+INFO 2025-05-19 14:38:54,656 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 238
+INFO 2025-05-19 14:41:13,438 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 238
+INFO 2025-05-19 14:41:33,034 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 238
+INFO 2025-05-19 14:41:33,060 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 238
+INFO 2025-05-19 14:41:48,760 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 19780
+INFO 2025-05-19 14:41:48,840 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:42:36,359 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:42:36,387 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 239
+INFO 2025-05-19 14:43:39,737 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 241
+INFO 2025-05-19 14:43:39,987 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 241
+INFO 2025-05-19 14:43:58,293 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 241
+INFO 2025-05-19 14:43:58,345 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 241
+INFO 2025-05-19 14:45:27,095 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 240
+INFO 2025-05-19 14:45:27,122 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 240
+INFO 2025-05-19 14:45:37,697 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 240
+INFO 2025-05-19 14:45:37,738 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 240
+INFO 2025-05-19 14:49:00,377 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\serializers.py changed, reloading.
+INFO 2025-05-19 14:49:02,159 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:49:18,436 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:49:18,468 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:49:23,796 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:49:25,096 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 19782
+INFO 2025-05-19 14:49:25,161 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:49:27,924 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 19782
+INFO 2025-05-19 14:49:27,977 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-05-19 14:50:07,761 log Not Found: /api/main/users/profile/ 
+WARNING 2025-05-19 14:50:07,762 basehttp "POST /api/main/users/profile/%20 HTTP/1.1" 404 7016
+INFO 2025-05-19 14:51:42,239 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:51:52,554 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:51:52,575 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:51:57,128 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:52:02,670 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:52:02,696 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:52:10,971 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:52:10,996 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:54:04,045 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\views.py changed, reloading.
+INFO 2025-05-19 14:54:05,482 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:54:27,007 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:54:31,896 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:54:31,920 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:55:50,912 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\views.py changed, reloading.
+INFO 2025-05-19 14:55:51,909 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:56:00,766 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:56:05,510 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:56:05,537 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:56:09,659 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 19782
+INFO 2025-05-19 14:56:10,162 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:56:47,128 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:56:52,205 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 263
+INFO 2025-05-19 14:56:57,775 basehttp "PUT /api/main/users/profile/ HTTP/1.1" 200 363
+INFO 2025-05-19 14:56:57,805 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 363
+INFO 2025-05-19 14:56:57,984 basehttp "GET /media/profile_pics/logo.png HTTP/1.1" 200 40945
+INFO 2025-05-19 14:57:02,084 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 20075
+INFO 2025-05-19 14:57:02,132 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:57:22,270 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 363
+INFO 2025-05-19 15:15:19,518 basehttp "POST /api/main/auth/login/ HTTP/1.1" 200 81
+INFO 2025-05-19 15:29:47,309 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 363
+INFO 2025-05-19 15:29:47,332 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 363
+INFO 2025-05-19 15:29:47,383 basehttp "GET /media/profile_pics/logo.png HTTP/1.1" 200 40945
+INFO 2025-05-19 15:29:51,204 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 363
+WARNING 2025-05-19 15:30:50,977 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:30:50,978 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 75
+WARNING 2025-05-19 15:31:43,077 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:31:43,078 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 75
+WARNING 2025-05-19 15:32:31,111 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:32:31,112 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 75
+WARNING 2025-05-19 15:36:06,147 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:36:06,147 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 114
+WARNING 2025-05-19 15:37:13,357 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:37:13,358 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 114
+WARNING 2025-05-19 15:37:29,101 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:37:29,101 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 114
+WARNING 2025-05-19 15:38:31,716 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:38:31,716 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 114
+INFO 2025-05-19 15:38:36,331 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 363
+INFO 2025-05-19 15:38:36,357 basehttp "GET /api/main/users/profile/ HTTP/1.1" 200 363
+WARNING 2025-05-19 15:41:30,962 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:41:30,963 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 56
+WARNING 2025-05-19 15:41:58,231 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:41:58,233 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 126
+WARNING 2025-05-19 15:42:10,728 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:10,728 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:11,822 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:11,822 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+ERROR 2025-05-19 15:42:17,043 log Internal Server Error: /api/institutions/job-applications/
+ERROR 2025-05-19 15:42:17,043 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 500 41
+WARNING 2025-05-19 15:42:21,443 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:21,443 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 81
+WARNING 2025-05-19 15:42:27,556 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:27,557 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 81
+WARNING 2025-05-19 15:42:34,637 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:34,637 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:36,138 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:36,138 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:36,817 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:36,817 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:37,330 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:37,330 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:37,894 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:37,895 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:38,109 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:38,109 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:38,426 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:38,427 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:38,471 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:38,471 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:39,398 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:39,399 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:43,334 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:43,335 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:43,846 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:43,857 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:44,041 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:44,042 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:44,225 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:44,226 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:44,383 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:44,384 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:44,553 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:44,553 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:44,702 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:44,702 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:44,859 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:44,860 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:45,026 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:45,026 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:45,167 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:45,168 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:45,339 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:45,340 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:45,955 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:45,956 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 74
+WARNING 2025-05-19 15:42:49,234 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:42:49,234 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 81
+INFO 2025-05-19 15:42:57,799 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 20075
+INFO 2025-05-19 15:42:57,872 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:01,409 basehttp "GET /admin/social_django/usersocialauth/ HTTP/1.1" 200 13611
+INFO 2025-05-19 15:43:01,473 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:01,477 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-05-19 15:43:02,885 basehttp "GET /admin/social_django/association/ HTTP/1.1" 200 13584
+INFO 2025-05-19 15:43:02,963 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:05,951 basehttp "GET /admin/social_django/nonce/ HTTP/1.1" 200 12974
+INFO 2025-05-19 15:43:06,276 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:07,468 basehttp "GET /admin/institutions/job/ HTTP/1.1" 200 13924
+INFO 2025-05-19 15:43:07,533 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:11,362 basehttp "GET /admin/institutions/job/1/change/ HTTP/1.1" 200 21894
+INFO 2025-05-19 15:43:11,417 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:11,443 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-05-19 15:43:17,965 basehttp "GET /admin/main/userprofile/ HTTP/1.1" 200 14834
+INFO 2025-05-19 15:43:18,265 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:19,604 basehttp "GET /admin/main/userprofile/7/change/ HTTP/1.1" 200 20075
+INFO 2025-05-19 15:43:20,220 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:25,220 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 14423
+INFO 2025-05-19 15:43:25,287 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:26,185 basehttp "GET /admin/institutions/institutionmember/ HTTP/1.1" 200 12729
+INFO 2025-05-19 15:43:26,241 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:27,610 basehttp "GET /admin/institutions/institution/ HTTP/1.1" 200 14541
+INFO 2025-05-19 15:43:27,676 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:29,539 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 14423
+INFO 2025-05-19 15:43:29,596 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:38,961 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 200 12821
+INFO 2025-05-19 15:43:39,078 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-05-19 15:43:40,096 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 302 0
+INFO 2025-05-19 15:43:40,163 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 14230
+INFO 2025-05-19 15:43:40,220 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:43:46,504 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 200 12825
+INFO 2025-05-19 15:43:47,553 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 302 0
+INFO 2025-05-19 15:43:47,631 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 12853
+INFO 2025-05-19 15:43:47,699 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:44:00,759 basehttp "GET /admin/institutions/job/ HTTP/1.1" 200 13924
+INFO 2025-05-19 15:44:00,811 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:44:02,296 basehttp "GET /admin/institutions/job/1/change/ HTTP/1.1" 200 21894
+INFO 2025-05-19 15:44:02,350 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-05-19 15:45:16,884 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:45:16,885 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 58
+ERROR 2025-05-19 15:46:08,641 log Internal Server Error: /api/institutions/job-applications/
+ERROR 2025-05-19 15:46:08,641 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 500 41
+WARNING 2025-05-19 15:46:10,847 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:46:10,848 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 81
+INFO 2025-05-19 15:46:39,366 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 14077
+INFO 2025-05-19 15:46:39,449 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:46:44,171 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 200 12821
+INFO 2025-05-19 15:46:45,126 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 302 0
+INFO 2025-05-19 15:46:45,203 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 12853
+INFO 2025-05-19 15:46:45,260 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:46:48,910 basehttp "GET /admin/institutions/jobapplication/add/ HTTP/1.1" 200 18104
+INFO 2025-05-19 15:46:49,256 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:46:54,241 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 12708
+INFO 2025-05-19 15:46:56,623 basehttp "GET /admin/institutions/job/ HTTP/1.1" 200 13924
+INFO 2025-05-19 15:46:56,681 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:46:58,353 basehttp "GET /admin/institutions/job/add/ HTTP/1.1" 200 21535
+INFO 2025-05-19 15:46:58,413 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:46:59,504 basehttp "GET /admin/institutions/job/ HTTP/1.1" 200 13924
+INFO 2025-05-19 15:47:38,380 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 12708
+INFO 2025-05-19 15:47:38,438 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:47:39,851 basehttp "GET /admin/institutions/jobapplication/add/ HTTP/1.1" 200 18104
+INFO 2025-05-19 15:47:39,911 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:48:45,208 basehttp "GET /admin/institutions/job/ HTTP/1.1" 200 13924
+INFO 2025-05-19 15:48:45,286 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:48:49,501 basehttp "GET /admin/institutions/job/add/ HTTP/1.1" 200 21535
+INFO 2025-05-19 15:48:49,583 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-05-19 15:49:36,894 log Internal Server Error: /api/institutions/job-applications/
+ERROR 2025-05-19 15:49:36,894 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 500 41
+WARNING 2025-05-19 15:49:59,607 log Bad Request: /api/institutions/job-applications/
+WARNING 2025-05-19 15:49:59,607 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 400 81
+INFO 2025-05-19 15:50:05,261 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 14077
+INFO 2025-05-19 15:50:05,615 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:50:09,259 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 200 12821
+INFO 2025-05-19 15:50:10,358 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 302 0
+INFO 2025-05-19 15:50:10,423 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 12853
+INFO 2025-05-19 15:50:10,493 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-05-19 15:50:14,773 log Internal Server Error: /api/institutions/job-applications/
+ERROR 2025-05-19 15:50:14,774 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 500 41
+INFO 2025-05-19 15:50:19,463 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 14077
+INFO 2025-05-19 15:50:19,757 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:51:53,385 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\main\serializers.py changed, reloading.
+INFO 2025-05-19 15:51:55,000 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 15:52:07,763 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 200 12821
+INFO 2025-05-19 15:52:08,710 basehttp "POST /admin/institutions/jobapplication/ HTTP/1.1" 302 0
+INFO 2025-05-19 15:52:08,790 basehttp "GET /admin/institutions/jobapplication/ HTTP/1.1" 200 12853
+INFO 2025-05-19 15:52:08,845 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 15:52:10,929 basehttp "POST /api/institutions/job-applications/ HTTP/1.1" 201 611
+INFO 2025-05-19 15:53:05,318 basehttp "GET /admin/institutions/job/add/ HTTP/1.1" 200 21535
+INFO 2025-05-19 15:53:05,381 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
