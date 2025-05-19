@@ -1,0 +1,4 @@
+INFO 2025-05-19 11:17:45,501 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 11:17:58,193 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\myproject\settings.py changed, reloading.
+INFO 2025-05-19 11:17:59,277 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 11:18:17,372 autoreload C:\Users\Asim\Desktop\dummy_project\myproject\myproject\settings.py changed, reloading.

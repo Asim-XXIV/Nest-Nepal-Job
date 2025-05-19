@@ -1,324 +1,707 @@
-# API Documentation for Job & Institution Management System
-
-This documentation covers the APIs for user authentication, profile management, institution-related activities, job posting, and job application processes. The system also supports admin functionalities for user management and role-based access.
-
----
-
-## 🔐 **Auth & User Profile APIs** `/api/`
-
-These endpoints handle user registration, login, profile management, and authentication.
-
-### 1. **POST /api/register/** - Register a New User
-Registers a new user with an email and password.
-
-**Request Body:**
-{
-  "email": "user@example.com",
-  "password": "your_password"
-}
-
-**Response:**
-- **201 Created**: Successfully registered the user.
-
----
-
-### 2. **POST /api/login/** - Log in to Get JWT Token
-Logs in a user and provides a JWT token for authentication.
-
-**Request Body:**
-{
-  "email": "user@example.com",
-  "password": "your_password"
-}
-
-**Response:**
-- **200 OK**: Returns a JWT token.
-{
-  "token": "jwt_token_here"
-}
-
----
-
-### 3. **POST /api/logout/** - Logout the Current User
-Logs out the authenticated user and invalidates their JWT token.
-
-**Headers:**
-- **Authorization**: Bearer `<your_token>`
-
-**Response:**
-- **200 OK**: User is logged out successfully.
-
----
-
-### 4. **GET /api/profile/** - Get Authenticated User's Profile
-Fetches the profile of the currently authenticated user.
-
-**Headers:**
-- **Authorization**: Bearer `<your_token>`
-
-**Response:**
-- **200 OK**: Returns the user's profile information.
-{
-  "full_name": "John Doe",
-  "contact_number": "1234567890",
-  "resume_url": "https://example.com/resume.pdf",
-  "skills": ["Python", "Django", "REST"],
-  "experience": "2 years at XYZ",
-  "education": "BSc Computer Science"
-}
-
----
-
-### 5. **POST /api/profile/** - Create or Update User Profile
-Allows the user to create or update their profile with additional information.
-
-**Request Body:**
-{
-  "full_name": "John Doe",
-  "contact_number": "1234567890",
-  "resume_url": "https://example.com/resume.pdf",
-  "skills": ["Python", "Django", "REST"],
-  "experience": "2 years at XYZ",
-  "education": "BSc Computer Science"
-}
-
-**Response:**
-- **200 OK**: Successfully updated the profile.
-
----
-
-## 🏢 **Institution APIs** `/api/institutions/`
-
-These endpoints manage institution-related activities, such as listing, creating institutions, and managing members.
-
-### 1. **GET /api/institutions/list/** - List All Institutions
-Lists all the institutions available in the system.
-
-**Response:**
-- **200 OK**: Returns a list of institutions.
-[
-  {
-    "name": "ABC University",
-    "description": "Top-tier educational institute",
-    "location": "Kathmandu"
-  },
-  ...
-]
-
----
-
-### 2. **POST /api/institutions/list/** - Create a New Institution
-Creates a new institution.
-
-**Request Body:**
-{
-  "name": "ABC University",
-  "description": "Top-tier educational institute",
-  "location": "Kathmandu"
-}
-
-**Response:**
-- **201 Created**: Successfully created the institution.
-{
-  "name": "ABC University",
-  "description": "Top-tier educational institute",
-  "location": "Kathmandu"
-}
-  
----
-
-### 3. **GET /api/institutions/members/** - List All Institution Members
-Lists all the members associated with institutions.
-
-**Response:**
-- **200 OK**: Returns a list of institution members.
-[
-  {
-    "user": 1,
-    "institution": 2,
-    "role": "admin"
-  },
-  ...
-]
-
----
-
-### 4. **POST /api/institutions/members/** - Add a Member to an Institution
-Adds a user to an institution with a specified role.
-
-**Request Body:**
-{
-  "user": 1,
-  "institution": 2,
-  "role": "admin"
-}
-
-**Response:**
-- **201 Created**: Successfully added the member.
-
----
-
-## 💼 **Job APIs** `/api/institutions/jobs/`
-
-These endpoints handle job-related operations such as listing jobs and posting new job opportunities.
-
-### 1. **GET /api/institutions/jobs/** - List All Jobs
-Lists all available jobs in the system.
-
-**Response:**
-- **200 OK**: Returns a list of jobs.
-[
-  {
-    "title": "Software Engineer",
-    "description": "Develop web applications",
-    "location": "Remote",
-    "salary_range": "50,000 - 70,000",
-    "job_type": "full_time",
-    "status": "active",
-    "institution": 2,
-    "posted_by": 1
-  },
-  ...
-]
-
----
-
-### 2. **POST /api/institutions/jobs/** - Post a New Job
-Posts a new job opportunity.
-
-**Request Body:**
-{
-  "title": "Software Engineer",
-  "description": "Develop web applications",
-  "location": "Remote",
-  "salary_range": "50,000 - 70,000",
-  "job_type": "full_time",
-  "status": "active",
-  "institution": 2,
-  "posted_by": 1
-}
-
-**Response:**
-- **201 Created**: Successfully posted the job.
-{
-  "title": "Software Engineer",
-  "description": "Develop web applications",
-  "location": "Remote",
-  "salary_range": "50,000 - 70,000",
-  "job_type": "full_time",
-  "status": "active",
-  "institution": 2,
-  "posted_by": 1
-}
-
----
-
-## 📩 **Job Application APIs** `/api/institutions/applications/`
-
-These endpoints allow job seekers to apply for jobs and list applications.
-
-### 1. **GET /api/institutions/applications/** - List All Job Applications
-Lists all job applications submitted by users.
-
-**Response:**
-- **200 OK**: Returns a list of job applications.
-[
-  {
-    "job": 3,
-    "user": 1,
-    "cover_letter": "I am excited to apply for this position."
-  },
-  ...
-]
-
----
-
-### 2. **POST /api/institutions/applications/** - Apply for a Job
-Submits a job application for a specific job.
-
-**Request Body:**
-{
-  "job": 3,
-  "user": 1,
-  "cover_letter": "I am excited to apply for this position."
-}
-
-**Response:**
-- **201 Created**: Successfully submitted the application.
-{
-  "job": 3,
-  "user": 1,
-  "cover_letter": "I am excited to apply for this position."
-}
-
----
-
-## 🛠️ **Admin APIs** `/api/admin/`
-
-These endpoints are only accessible by admins for managing users and user profiles.
-
-### 1. **GET /api/admin/users/** - Get List of All Users (Admin Only)
-Lists all the users in the system.
-
-**Headers:**
-- **Authorization**: Bearer `<admin_token>`
-
-**Response:**
-- **200 OK**: Returns a list of all users.
-[
-  {
-    "id": 1,
-    "email": "user1@example.com",
-    "role": "admin"
-  },
-  ...
-]
-
----
-
-### 2. **GET /api/admin/users/<user_id>/** - Retrieve Specific User Info (Admin Only)
-Fetches the information of a specific user.
-
-**Headers:**
-- **Authorization**: Bearer `<admin_token>`
-
-**Response:**
-- **200 OK**: Returns the user's details.
-{
-  "id": 1,
-  "email": "user1@example.com",
-  "role": "admin",
-  "profile": {
-    "full_name": "John Doe",
-    "contact_number": "1234567890",
-    "skills": ["Python", "Django"]
-  }
-}
-
----
-
-### 3. **PUT /api/admin/users/<user_id>/** - Update User Info (Admin Only)
-Updates the information of a specific user.
-
-**Headers:**
-- **Authorization**: Bearer `<admin_token>`
-
-**Request Body:**
-{
-  "email": "updated_email@example.com",
-  "role": "user"
-}
-
-**Response:**
-- **200 OK**: Successfully updated the user.
-
----
-
-### 4. **DELETE /api/admin/users/<user_id>/** - Delete a User (Admin Only)
-Deletes a specific user from the system.
-
-**Headers:**
-- **Authorization**: Bearer `<admin_token>`
-
-**Response:**
-- **200 OK**: Successfully deleted the user.
+API Documentation for Job & Institution Management System
+
+This documentation outlines the APIs for a job portal system built with Django and Django REST Framework. The system supports user authentication, profile management, institution creation, job postings, job applications, and admin functionalities. It includes a robust notification system, role-based access control (admin, company, job_seeker), pagination for large datasets, and optimized database queries.
+
+System Overview
+- Base URL: http://localhost:8000 (development)
+- Authentication: Uses JWT tokens stored in HTTP-only cookies (access_token, refresh_token). Most endpoints require authentication via the IsAuthenticated permission.
+- Roles:
+  - Admin: Can manage users, institutions, jobs, and notifications.
+  - Company: Can post jobs and manage institution memberships.
+  - Job Seeker: Can apply for jobs and view institutions.
+- Notifications: Triggered for key actions (e.g., registration, job posting, application status changes) and stored in the Notification model. Users can view their notifications, and admins can manage all notifications.
+- Pagination: Uses StandardResultsSetPagination with a default page size of 10, customizable via page_size query parameter (max 100).
+- Security: Supports Google OAuth2, secure cookies in production (secure=True), and CORS restrictions.
+- Database: Optimized with indexes on frequently queried fields (e.g., Institution.name, Job.status).
+- Error Handling: Custom exception handler (custom_exception_handler) provides consistent error responses.
+
+Auth & User Profile APIs (/api/main/)
+These endpoints handle user registration, login, logout, profile management, token refresh, and notification management. All endpoints set/get JWT tokens via cookies.
+
+1. POST /api/main/auth/register/ - Register a New User
+   Registers a new user and creates a UserProfile via signals.
+   Permissions: Open (no authentication required)
+   Request Body:
+   {
+     "username": "johndoe",
+     "email": "johndoe@example.com",
+     "password": "securepassword123",
+     "role": "job_seeker"
+   }
+   Response:
+   - 201 Created: {"message": "User registered successfully"}
+   - 400 Bad Request: {"email": ["A user with that email already exists."]}
+   Notifications:
+   - User: "Welcome to Job Portal" (notification_type: account)
+   - Admins: "New User Registration" (notification_type: system)
+
+2. POST /api/main/auth/login/ - Log in to Get JWT Tokens
+   Logs in a user and sets JWT tokens in cookies.
+   Permissions: Open
+   Request Body:
+   {
+     "email": "johndoe@example.com",
+     "password": "securepassword123"
+   }
+   Response:
+   - 200 OK:
+     {
+       "message": "Login successful",
+       "role": "job_seeker",
+       "user_id": 1,
+       "username": "johndoe"
+     }
+     Sets cookies: access_token, refresh_token, role, user_id, username
+   - 400 Bad Request: {"error": "Invalid credentials"}
+   Notifications:
+   - User: "Login Successful" (notification_type: account)
+
+3. POST /api/main/auth/logout/ - Logout the Current User
+   Logs out the user and clears cookies.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 205 Reset Content: {"message": "Logout successful"}
+     Clears cookies: access_token, refresh_token, role, user_id, username
+   - 400 Bad Request: {"error": "Logout failed"}
+   Notifications:
+   - User: "Logout Successful" (notification_type: account)
+
+4. POST /api/main/auth/refresh-token/ - Refresh Access Token
+   Refreshes the access token using the refresh token.
+   Permissions: Open
+   Headers:
+   - Cookie: refresh_token=<your_refresh_token>
+   Response:
+   - 200 OK: {"message": "Token refreshed successfully"}
+     Sets new access_token cookie
+   - 401 Unauthorized: {"error": "Invalid refresh token"}
+
+5. POST /api/main/auth/change-password/ - Change User Password
+   Allows the authenticated user to change their password.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "old_password": "securepassword123",
+     "new_password": "newpassword456"
+   }
+   Response:
+   - 200 OK: {"message": "Password changed successfully"}
+   - 400 Bad Request: {"error": "Old password is incorrect"}
+   Notifications:
+   - User: "Password Changed" (notification_type: account)
+
+6. GET /api/main/users/profile/ - Get Authenticated User's Profile
+   Fetches the profile of the currently authenticated user.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 200 OK:
+     {
+       "full_name": "John Doe",
+       "contact_number": "1234567890",
+       "resume_url": "https://example.com/resume.pdf",
+       "skills": ["Python", "Django", "REST"],
+       "experience": "2 years at XYZ",
+       "education": "BSc Computer Science"
+     }
+   - 404 Not Found: {"error": "Profile not found"}
+
+7. PUT /api/main/users/profile/ - Update User Profile
+   Updates the authenticated user's profile.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "full_name": "John Doe",
+     "contact_number": "1234567890",
+     "resume_url": "https://example.com/resume.pdf",
+     "skills": ["Python", "Django", "REST"],
+     "experience": "2 years at XYZ",
+     "education": "BSc Computer Science"
+   }
+   Response:
+   - 200 OK: <updated_profile_data>
+   - 400 Bad Request: {"full_name": ["This field is required."]}
+   Notifications:
+   - User: "Profile Updated" (notification_type: profile)
+
+8. GET /api/main/notifications/ - List User Notifications
+   Lists notifications for the authenticated user with pagination.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Query Parameters:
+   - is_read: Filter by read status (true/false)
+   - type: Filter by notification type (e.g., account, job)
+   - page: Page number
+   - page_size: Items per page (default 10, max 100)
+   Response:
+   - 200 OK:
+     {
+       "count": 2,
+       "next": null,
+       "previous": null,
+       "results": [
+         {
+           "id": 1,
+           "title": "Welcome to Job Portal",
+           "message": "Welcome to the Job Portal, johndoe!",
+           "notification_type": "account",
+           "is_read": false,
+           "created_at": "2025-05-19T11:44:00Z"
+         },
+         ...
+       ]
+     }
+
+9. GET /api/main/notifications/<notification_id>/ - Get Notification Details
+   Fetches details of a specific notification.
+   Permissions: IsAuthenticated, IsOwnerOrAdmin
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 200 OK: <notification_data>
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+
+10. PUT /api/main/notifications/<notification_id>/ - Update Notification
+    Updates the read status of a notification.
+    Permissions: IsAuthenticated, IsOwnerOrAdmin
+    Headers:
+    - Cookie: access_token=<your_token>
+    Request Body:
+    {
+      "is_read": true
+    }
+    Response:
+    - 200 OK: <updated_notification_data>
+    - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+
+11. DELETE /api/main/notifications/<notification_id>/ - Delete Notification
+    Deletes a specific notification.
+    Permissions: IsAuthenticated, IsOwnerOrAdmin
+    Headers:
+    - Cookie: access_token=<your_token>
+    Response:
+    - 204 No Content
+    - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+
+12. POST /api/main/notifications/mark-all-read/ - Mark All Notifications as Read
+    Marks all notifications for the user as read.
+    Permissions: IsAuthenticated
+    Headers:
+    - Cookie: access_token=<your_token>
+    Response:
+    - 200 OK: {"message": "Marked 5 notifications as read"}
+
+Institution APIs (/api/institutions/)
+These endpoints manage institution creation, membership, and details.
+
+1. GET /api/institutions/institutions/ - List All Institutions
+   Lists all institutions with pagination.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Query Parameters:
+   - page: Page number
+   - page_size: Items per page
+   Response:
+   - 200 OK:
+     {
+       "count": 1,
+       "next": null,
+       "previous": null,
+       "results": [
+         {
+           "id": 1,
+           "name": "ABC University",
+           "description": "Top-tier educational institute",
+           "location": "Kathmandu",
+           "created_at": "2025-05-19T11:44:00Z"
+         },
+         ...
+       ]
+     }
+
+2. POST /api/institutions/institutions/ - Create a New Institution
+   Creates a new institution and adds the creator as an admin member.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "name": "ABC University",
+     "description": "Top-tier educational institute",
+     "location": "Kathmandu"
+   }
+   Response:
+   - 201 Created: <institution_data>
+   - 400 Bad Request: {"name": ["This field is required."]}
+   Notifications:
+   - Admins: "New Institution Created" (notification_type: system)
+   - Creator: "Institution Membership" (notification_type: institution, role: admin)
+
+3. GET /api/institutions/institutions/<pk>/ - Get Institution Details
+   Fetches details of a specific institution.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 200 OK: <institution_data>
+   - 404 Not Found: {"error": "Institution not found"}
+
+4. PUT /api/institutions/institutions/<pk>/ - Update Institution
+   Updates an institution's details.
+   Permissions: IsAuthenticated, IsInstitutionAdmin
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "name": "Updated University",
+     "description": "Updated description",
+     "location": "Pokhara"
+   }
+   Response:
+   - 200 OK: <updated_institution_data>
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+
+5. DELETE /api/institutions/institutions/<pk>/ - Delete Institution
+   Deletes an institution.
+   Permissions: IsAuthenticated, IsInstitutionAdmin
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 204 No Content
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+   Notifications:
+   - Admins: "Institution Deleted" (notification_type: system)
+
+6. GET /api/institutions/institution-members/ - List Institution Members
+   Lists members of institutions with pagination.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Query Parameters:
+   - institution_id: Filter by institution
+   - page: Page number
+   - page_size: Items per page
+   Response:
+   - 200 OK:
+     {
+       "count": 1,
+       "next": null,
+       "previous": null,
+       "results": [
+         {
+           "id": 1,
+           "user": {"id": 1, "username": "johndoe", ...},
+           "institution": {"id": 1, "name": "ABC University", ...},
+           "role": "admin",
+           "joined_at": "2025-05-19T11:44:00Z"
+         },
+         ...
+       ]
+     }
+
+7. POST /api/institutions/institution-members/ - Add a Member to an Institution
+   Adds a user to an institution with a specified role.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "user_id": 1,
+     "institution_id": 2,
+     "role": "company"
+   }
+   Response:
+   - 201 Created: <member_data>
+   - 400 Bad Request: {"error": "This user is already a member of this institution."}
+   Notifications:
+   - User: "Institution Membership" (notification_type: institution)
+
+8. GET /api/institutions/institution-members/<pk>/ - Get Member Details
+   Fetches details of a specific membership.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 200 OK: <member_data>
+   - 404 Not Found: {"error": "Member not found"}
+
+9. PUT /api/institutions/institution-members/<pk>/ - Update Member
+   Updates a member's role.
+   Permissions: IsAuthenticated, IsInstitutionAdmin
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "role": "job_seeker"
+   }
+   Response:
+   - 200 OK: <updated_member_data>
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+   Notifications:
+   - User: "Membership Role Updated" (notification_type: institution)
+
+10. DELETE /api/institutions/institution-members/<pk>/ - Delete Member
+    Removes a member from an institution.
+    Permissions: IsAuthenticated, IsInstitutionAdmin
+    Headers:
+    - Cookie: access_token=<your_token>
+    Response:
+    - 204 No Content
+    - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+    Notifications:
+    - User: "Membership Removed" (notification_type: institution)
+
+Job APIs (/api/institutions/jobs/)
+These endpoints handle job postings and management.
+
+1. GET /api/institutions/jobs/ - List All Jobs
+   Lists all jobs with pagination and filtering.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Query Parameters:
+   - search: Search by title or description
+   - institution_id: Filter by institution
+   - job_type: Filter by job type (full_time, part_time, internship, contract)
+   - status: Filter by status (active, inactive)
+   - page: Page number
+   - page_size: Items per page
+   Response:
+   - 200 OK:
+     {
+       "count": 1,
+       "next": null,
+       "previous": null,
+       "results": [
+         {
+           "id": 1,
+           "title": "Software Engineer",
+           "description": "Develop web applications",
+           "location": "Remote",
+           "salary_range": "50,000 - 70,000",
+           "job_type": "full_time",
+           "status": "active",
+           "institution": {"id": 2, "name": "ABC University", ...},
+           "posted_by": {"id": 1, "username": "johndoe", ...},
+           "created_at": "2025-05-19T11:44:00Z"
+         },
+         ...
+       ]
+     }
+
+2. POST /api/institutions/jobs/ - Post a New Job
+   Posts a new job opportunity.
+   Permissions: IsAuthenticated, IsInstitutionCompany
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "title": "Software Engineer",
+     "description": "Develop web applications",
+     "location": "Remote",
+     "salary_range": "50,000 - 70,000",
+     "job_type": "full_time",
+     "status": "active",
+     "institution_id": 2
+   }
+   Response:
+   - 201 Created: <job_data>
+   - 400 Bad Request: {"error": "You must be a company member of the institution to post a job."}
+   Notifications:
+   - Poster: "Job Posted" (notification_type: job)
+
+3. GET /api/institutions/jobs/<pk>/ - Get Job Details
+   Fetches details of a specific job.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 200 OK: <job_data>
+   - 404 Not Found: {"error": "Job not found"}
+
+4. PUT /api/institutions/jobs/<pk>/ - Update Job
+   Updates a job's details.
+   Permissions: IsAuthenticated, IsJobOwnerOrAdmin
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "title": "Senior Software Engineer",
+     "status": "inactive"
+   }
+   Response:
+   - 200 OK: <updated_job_data>
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+   Notifications (if status changes):
+   - Admins: "Job Status Updated" (notification_type: system)
+
+5. DELETE /api/institutions/jobs/<pk>/ - Delete Job
+   Deletes a job.
+   Permissions: IsAuthenticated, IsJobOwnerOrAdmin
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 204 No Content
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+   Notifications:
+   - Admins: "Job Deleted" (notification_type: system)
+
+Job Application APIs (/api/institutions/job-applications/)
+These endpoints manage job applications.
+
+1. GET /api/institutions/job-applications/ - List All Job Applications
+   Lists job applications with pagination and filtering.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Query Parameters:
+   - job_id: Filter by job
+   - user_id: Filter by user
+   - status: Filter by status (pending, reviewed, accepted, rejected)
+   - page: Page number
+   - page_size: Items per page
+   Response:
+   - 200 OK:
+     {
+       "count": 1,
+       "next": null,
+       "previous": null,
+       "results": [
+         {
+           "id": 1,
+           "job": {"id": 3, "title": "Software Engineer", ...},
+           "user": {"id": 1, "username": "johndoe", ...},
+           "cover_letter": "I am excited to apply for this position.",
+           "status": "pending",
+           "applied_at": "2025-05-19T11:44:00Z"
+         },
+         ...
+       ]
+     }
+
+2. POST /api/institutions/job-applications/ - Apply for a Job
+   Submits a job application.
+   Permissions: IsAuthenticated
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "job_id": 3,
+     "cover_letter": "I am excited to apply for this position."
+   }
+   Response:
+   - 201 Created: <application_data>
+   - 400 Bad Request: {"error": "You have already applied for this job."}
+   Notifications:
+   - Applicant: "Job Application Submitted" (notification_type: job_application)
+   - Job Poster: "New Job Application" (notification_type: job_application)
+
+3. GET /api/institutions/job-applications/<pk>/ - Get Application Details
+   Fetches details of a specific job application.
+   Permissions: IsAuthenticated, IsApplicationOwnerOrJobPoster
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 200 OK: <application_data>
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+
+4. PUT /api/institutions/job-applications/<pk>/ - Update Application
+   Updates an application's status (e.g., from pending to accepted).
+   Permissions: IsAuthenticated, IsApplicationOwnerOrJobPoster
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "status": "accepted"
+   }
+   Response:
+   - 200 OK: <updated_application_data>
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+   Notifications (if status changes):
+   - Applicant: "Job Application Status Updated" (notification_type: job_application)
+
+5. DELETE /api/institutions/job-applications/<pk>/ - Delete Application
+   Deletes a job application.
+   Permissions: IsAuthenticated, IsApplicationOwnerOrJobPoster
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 204 No Content
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+   Notifications:
+   - Applicant: "Job Application Removed" (notification_type: job_application)
+
+Admin APIs (/api/main/admin/)
+These endpoints are restricted to admins for managing users and notifications.
+
+1. GET /api/main/admin/users/ - Get List of All Users
+   Lists all users with pagination and filtering.
+   Permissions: IsAuthenticated, IsAdminUserRole
+   Headers:
+   - Cookie: access_token=<your_token>
+   Query Parameters:
+   - search: Search by username or email
+   - role: Filter by role (admin, company, job_seeker)
+   - is_active: Filter by active status (true/false)
+   - page: Page number
+   - page_size: Items per page
+   Response:
+   - 200 OK:
+     {
+       "count": 1,
+       "next": null,
+       "previous": null,
+       "results": [
+         {
+           "id": 1,
+           "username": "johndoe",
+           "email": "johndoe@example.com",
+           "role": "admin",
+           "is_active": true
+         },
+         ...
+       ]
+     }
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+
+2. GET /api/main/admin/users/<user_id>/ - Retrieve Specific User Info
+   Fetches details of a specific user, including profile.
+   Permissions: IsAuthenticated, IsAdminUserRole
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 200 OK:
+     {
+       "id": 1,
+       "username": "johndoe",
+       "email": "johndoe@example.com",
+       "role": "admin",
+       "profile": {
+         "full_name": "John Doe",
+         "contact_number": "1234567890",
+         "skills": ["Python", "Django"]
+       }
+     }
+   - 404 Not Found: {"error": "User not found"}
+
+3. PUT /api/main/admin/users/<user_id>/ - Update User Info
+   Updates a user's details and optionally their profile.
+   Permissions: IsAuthenticated, IsAdminUserRole
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "email": "updated_email@example.com",
+     "role": "company",
+     "profile": {
+       "full_name": "Updated Name"
+     }
+   }
+   Response:
+   - 200 OK: {"message": "User updated successfully"}
+   - 400 Bad Request: {"email": ["A user with that email already exists."]}
+   Notifications:
+   - User: "Account Updated" (notification_type: account)
+
+4. DELETE /api/main/admin/users/<user_id>/ - Delete a User
+   Deletes a specific user.
+   Permissions: IsAuthenticated, IsAdminUserRole
+   Headers:
+   - Cookie: access_token=<your_token>
+   Response:
+   - 204 No Content
+   - 400 Bad Request: {"error": "You cannot delete your own account"}
+   Notifications:
+   - Admins: "User Deleted" (notification_type: system)
+
+5. GET /api/main/admin/notifications/ - List All Notifications
+   Lists all notifications with pagination and filtering.
+   Permissions: IsAuthenticated, IsAdminUserRole
+   Headers:
+   - Cookie: access_token=<your_token>
+   Query Parameters:
+   - user_id: Filter by recipient
+   - is_read: Filter by read status (true/false)
+   - type: Filter by notification type
+   - page: Page number
+   - page_size: Items per page
+   Response:
+   - 200 OK: <paginated_notification_data>
+   - 403 Forbidden: {"error": "You do not have permission to perform this action."}
+
+6. POST /api/main/admin/notifications/create/ - Create Notification
+   Creates a notification for a specific user or all users.
+   Permissions: IsAuthenticated, IsAdminUserRole
+   Headers:
+   - Cookie: access_token=<your_token>
+   Request Body:
+   {
+     "recipient_id": 1, // Optional: omit for all users
+     "notification_type": "system",
+     "title": "System Update",
+     "message": "The system will undergo maintenance.",
+     "related_object_id": null,
+     "related_object_type": null
+   }
+   Response:
+   - 201 Created: <notification_data> (single user)
+   - 201 Created: {"message": "Created 100 notifications"} (all users)
+   - 400 Bad Request: {"error": "Title and message are required"}
+
+7. GET /api/main/admin/users/search/ - Search Users
+   Searches users by username, email, or full name with pagination.
+   Permissions: IsAuthenticated, IsAdminUserRole
+   Headers:
+   - Cookie: access_token=<your_token>
+   Query Parameters:
+   - q: Search query (required)
+   - page: Page number
+   - page_size: Items per page
+   Response:
+   - 200 OK: <paginated_user_data>
+   - 400 Bad Request: {"error": "Search query parameter 'q' is required"}
+
+Security Considerations
+- Use HTTPS in production to secure cookies (secure=True).
+- Restrict CORS_ALLOWED_ORIGINS to trusted frontend domains.
+- Generate a unique DJANGO_SECRET_KEY for production.
+- Implement rate limiting for public endpoints (e.g., login, register).
+- Use a task queue (e.g., Celery) for asynchronous notification delivery in high-traffic scenarios.
+
+Performance Optimizations
+- Database indexes on Institution.name, Job.status, JobApplication.status for faster queries.
+- Unique constraints (e.g., InstitutionMember.user-institution) to prevent duplicates.
+- Bulk creation of notifications for efficiency.
+- Pagination to handle large datasets.
+- Custom exception handling for consistent error responses.
+
+Testing Instructions
+1. Start the server: python manage.py runserver
+2. Test authentication:
+   - Register: POST /api/main/auth/register/
+   - Login: POST /api/main/auth/login/
+   - Logout: POST /api/main/auth/logout/
+3. Test institution operations:
+   - Create: POST /api/institutions/institutions/
+   - Add member: POST /api/institutions/institution-members/
+4. Test job operations:
+   - Post job: POST /api/institutions/jobs/
+   - Apply: POST /api/institutions/job-applications/
+5. Test notifications:
+   - List: GET /api/main/notifications/
+   - Mark read: POST /api/main/notifications/mark-all-read/
+6. Test admin operations:
+   - List users: GET /api/main/admin/users/
+   - Create notification: POST /api/main/admin/notifications/create/
+
+Contact
+For issues or enhancements, contact the development team at rimalasim24@gmail.com
